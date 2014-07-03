@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="theme/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/result.css" />
+    <link rel="stylesheet" type="text/css" href="css/lexique.css" />
+    <link rel="stylesheet" type="text/css" href="css/draggablewindow.css" />
+    <link rel="stylesheet" type="text/css" href="css/feedback.css" />
+    <link rel="stylesheet" type="text/css" href="css/resultidentform.css" />
+    <link rel="stylesheet" type="text/css" href="css/sendtoform.css" />
+    <script language="javascript" type="text/javascript" src="scripts/highslide/highslide.js"></script>    
+    <script language="javascript" type="text/javascript" src="scripts/prototype.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/scriptaculous/scriptaculous.js"></script>
+    
+    <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" language="javascript">
+            $.noConflict();
+            var loadedWelcome = true;
+    </script>
+    
+    <script type="text/javascript" language="javascript" src="scripts/jwplayer/jwplayer.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="scripts/draggablewindow.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/timer.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/page.cls.js"></script>
+
+    <script language="javascript" type="text/javascript" src="scripts/nq.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/imgpreloader.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.multiplechoices.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.multipleanswers.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.longtext.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.dictee.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.shorttext.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.ranking.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.association.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.blanktext.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.checkerboard.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/checkerboard.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/imagepart.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.imagepart.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.classement.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/question.marquage.cls.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/marquage.mobile.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="scripts/feedback.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/common.js"></script>    
+    <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/lexique.js"></script>
+    
+    <title></title>
+</head>
+<body>
+  	<div id="pagewrapper" class="pagewrapper">
+    <div id="wrapperallcontentwrapper">
+      <div id="allcontentwrapper">
+        <div id="contentwrapper">
+            <div id="header" class="sticky_header">
+                <div id="username">
+                    &nbsp;
+                </div>
+                <div id="quiztitle"></div>
+                <div id="navbar" class="clsVisibilityHidden">
+                    <p class="navbarP">
+                       <span id="navbResult" style="padding-right:11px;"><a href="javascript:top.ccdmd.nq4.pageGotoResult();">&nbsp;</a></span>
+                       <span id="navbLexique">&nbsp;</span>
+                       <span class="navbSep3" id="navbSep3_1">&nbsp;</span><span class="navbSep3" id="navbSep3_2">&nbsp;</span><span class="navbSep3" id="navbSep3_3">&nbsp;</span>
+                       <span id="navbRedo" class="navbSepOnly">&nbsp;</span>
+                       <span id="navbSolution" class="navbSep">&nbsp;</span>
+                       <span id="navbValidate" class="navbSep">&nbsp;</span>
+                       <span id="spacingNavBar" style="padding-left: 30px;"></span>
+                       <img src="theme/imagestheme/btn_back_disabled.png" id="btnBackDisabled" />
+                       <a href="#" id="btnBackEnabled" onclick="top.ccdmd.nq4.pageBack();"><img src="theme/imagestheme/btn_back_norm.png" class="imgArrowNavbar" border="0" onmouseover="this.src='theme/imagestheme/btn_back_roll.png'" onmouseout="this.src='theme/imagestheme/btn_back_norm.png'" /></a>                       
+                       <a id="pageLabel" href="#" onclick="toggleMenuPages('1'); return false;"></a>&nbsp;
+                       <span id="navBarPageIndex"></span>
+                       <input id="navBarTxtPageIndex" type="text" size="4" maxlength="4" onkeypress="nq4_navbartext_onkeypress(event);" />
+                       <span id="navBarOf">&nbsp;de&nbsp;</span>
+                       <span id="navBarPageCount"></span>
+                       <img src="theme/imagestheme/btn_next_disabled.png" id="btnNextDisabled" />
+                       <a href="#" id="btnNextEnabled" onclick="top.ccdmd.nq4.pageNext();">
+                           <img src="theme/imagestheme/btn_next_norm.png" border="0" class="imgArrowNavbar" onmouseover="this.src='theme/imagestheme/btn_next_roll.png'" onmouseout="this.src='theme/imagestheme/btn_next_norm.png'" />
+                       </a>
+                    </p>
+                </div>                
+                <div id="headersep"></div>
+            </div>            
+            <div id="scrollwrapper" onclick="closeFeedback();">
+                <div id="quizpage">
+                    <div id="pageTitleContainer" class="clsVisibilityHidden">
+                        <div id="pageTitle">
+                        </div>                        
+                    </div>
+                    <div id="pagenavbar" class="clsVisibilityHidden">
+                        <span id="pagenavbType"><a href="javascript:top.ccdmd.nq4.showConsigne()">&nbsp;</a></span>
+                        <span id="pagenavbScore" class="pagenavbSepScore"></span>
+                        <span id="pagenavbIndice" class="pagenavbSepIndice"><a href="javascript:top.ccdmd.nq4.showIndice()">&nbsp;</a></span>
+                        <span id="pagenavbSource" class="pagenavbSepSource"><a href="javascript:top.ccdmd.nq4.showSource()">&nbsp;</a></span>
+                    </div>
+                    <div id="pagecontent">
+                        <div id="textGuidelinequiz">
+                        </div>
+                        <div id="textGuidelinequizSep" class="clsVisibilityHidden">
+                        </div>
+                        <div class="medias" id="imageContainer">
+                        </div>
+                        <div class="medias" id="soundContainer">
+                        </div>
+                        <div class="medias" id="videoContainer">
+                        </div>
+                        <div id="statement" class="clsVisibilityHidden">
+                        </div>
+                        <div id="question">
+                        </div>
+                        <div id="saq" class="spacerAfterQuestion">
+                        </div>
+                    </div>
+                </div>
+                <div id="resultpage" class="clsVisibilityHidden">
+                    <div id="resultother">
+                        &nbsp;
+                    </div> 
+                    <div id="resulttitle">
+                        &nbsp;
+                    </div>
+                    <div id="resultButtons">                        
+                        <a href="#" id="resultButtonRedo" onclick="top.ccdmd.nq4.restartQuiz();"></a>                                                
+                        <span id="nothing1">&nbsp;&nbsp;</span>
+                        <a href="#" id="resultButtonSendTo" onclick="top.ccdmd.nq4.resultSend();"></a>                                                
+                        <span id="nothing2">&nbsp;&nbsp;</span>
+                        <a href="#" id="resultButtonPrint" onclick="top.ccdmd.nq4.resultPrint();"></a>
+                    </div>
+                    <table id="resultheaderWOtimer" class="resultheader" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="width:99px;"><div id="resultHeaderCol0WOT">&nbsp;</div></td>
+                            <td style="width:138px;"><div id="resultHeaderCol1WOT">&nbsp;</div></td>
+                            <td style="width:99px;"><div id="resultHeaderCol2WOT">&nbsp;</div></td>
+                            <td style="width:243px;"><div id="resultHeaderCol3WOT">&nbsp;</div></td>
+                        </tr>
+                    </table>
+                    <div id="resultcontentWOtimer" class="resultcontent">
+                        <table id="resultWOtimer" class="resulttable" cellpadding="0" cellspacing="0" border="0">
+                        </table>
+                    </div>
+                    <table id="resultheaderWtimer" class="resultheader" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="width:99px;">
+                            	<div id="resultHeaderCol0WT">&nbsp;</div>
+                            </td>
+                            <td style="width:138px;">
+                            	<div id="resultHeaderCol1WT">&nbsp;</div>
+                            </td>
+                            <td style="width:119px;">
+                            	<div id="resultHeaderCol2WT">&nbsp;</div>
+                            </td>
+                            <td style="width:99px;">
+                            	<div id="resultHeaderCol3WT">&nbsp;</div>
+                            </td>
+                            <td style="width:130px;">
+                            	<div id="resultHeaderCol4WT">&nbsp;</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="resultcontentWtimer" class="resultcontent">
+                        <table id="resultWtimer" class="resulttable" cellpadding="0" cellspacing="0" border="0">
+                        </table>
+                    </div>
+                    <div id="spacerEndAll" class="spacerEnd">&nbsp;</div>
+                </div>
+                <div id="lexiquepage" class="clsVisibilityHidden">
+                	<div id="lexiqueother">
+                      &nbsp;    
+                  </div> 
+                  <div id="lexiquetitle">
+                      &nbsp;
+                  </div>
+                  <div id="lexiquelettres">   
+                  	<span class="lexique_lettre"><a id="lexique-lettre-a" data-index-lettre="1">A</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-b" data-index-lettre="2">B</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-c" data-index-lettre="3">C</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-d" data-index-lettre="4">D</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-e" data-index-lettre="5">E</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-f" data-index-lettre="6">F</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-g" data-index-lettre="7">G</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-h" data-index-lettre="8">H</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-i" data-index-lettre="9">I</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-j" data-index-lettre="10">J</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-k" data-index-lettre="11">K</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-l" data-index-lettre="12">L</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-m" data-index-lettre="13">M</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-n" data-index-lettre="14">N</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-o" data-index-lettre="15">O</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-p" data-index-lettre="16">P</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-q" data-index-lettre="17">Q</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-r" data-index-lettre="18">R</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-s" data-index-lettre="19">S</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-t" data-index-lettre="20">T</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-u" data-index-lettre="21">U</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-v" data-index-lettre="22">V</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-w" data-index-lettre="23">W</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-x" data-index-lettre="24">X</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-y" data-index-lettre="25">Y</a></span>
+                  	<span class="lexique_lettre"><a id="lexique-lettre-z" data-index-lettre="26">Z</a></span>
+                  </div>
+                  <div id="lexiquecontenu">
+                		&nbsp;
+                	</div>                	
+                </div>                                 
+            </div>            
+        </div>
+        <div id="wrapperMarquage" class="clsVisibilityHidden">
+             <div id="containerMarquage" ontouchstart="startGetPosition();"></div>
+        </div>
+        <div id="feedback" class="clsVisibilityHidden">
+             <div id="btnCloseFeedback" onclick="closeFeedback(); window.scrollTo(0,0);">
+                  <img src="theme/imagestheme/feedback_x_norm.png" onmouseover="this.src='theme/imagestheme/feedback_x_roll.png'" onmouseout="this.src='theme/imagestheme/feedback_x_norm.png'">
+             </div>
+             <div id="feedbackcontent">
+             </div>    
+             <div class="spacerFeedbackEnd">
+             </div>   
+        </div>
+      </div>      
+      <div id="contentpageup" class="content_sticky_footer">
+      	<a href="#" onclick="closeFeedback(); jQuery(window).scrollTop(0); return false;"><img src='theme/imagestheme/toppage_norm.png' onmouseover="jQuery(this).attr('src', 'theme/imagestheme/toppage_roll.png');" onmouseout="jQuery(this).attr('src', 'theme/imagestheme/toppage_norm.png');"></a>
+      </div>
+    </div><!--END OF <div id="wrapperallcontentwrapper">-->    
+    </div>    
+    <div id="menupageswrapper">
+    	<div id="menupageshandle"></div>
+    	<div id="menupageshandleright" onclick="javascript:toggleMenuPages('0');" onmouseover="jQuery('#menupagesclose').attr('src', 'theme/imagestheme/feedback_x_roll.png');" onmouseout="jQuery('#menupagesclose').attr('src', 'theme/imagestheme/feedback_x_norm.png');">
+      	<img id="menupagesclose" src="theme/imagestheme/feedback_x_norm.png">
+       </div>
+    	<div id="menupages"></div>
+    </div>
+    <div id="indice" class="draggablewindow">
+        <div id="indicehandlewrapper">
+            <div id="indicehandle"></div>
+            <div id="indicehandleright" onclick="javascript:closeIndice();" onmouseover="jQuery('#indiceclose').attr('src', 'theme/imagestheme/feedback_x_roll.png');" onmouseout="jQuery('#indiceclose').attr('src', 'theme/imagestheme/feedback_x_norm.png');">
+            	<img id="indiceclose" src="theme/imagestheme/feedback_x_norm.png">
+            </div>
+        </div>
+        <div id="indiceheader">
+            <span>&nbsp;</span>
+        </div>
+        <div id="indicesep"></div>
+        <div id="indicewrapper">
+            <div></div>
+        </div>
+    </div>
+    <div id="resultIdentForm">
+        <div id="resulthandle">&nbsp;</div>
+        <div id="resultIdentFormHeader">&nbsp;</div>
+        <div id="resultIdentFormLine"></div>
+        <div id="resultwrapper">
+             <table id="resultIdentFormTable" width="100%" cellpadding="0" cellspacing="0">
+                 <tr>
+                     <td id="rifLblLastName">&nbsp;</td>
+                     <td width="225">
+                         <input id="txtrifLastName" type="text"/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="rifLblName">&nbsp;</td>
+                     <td width="225">
+                         <input id="txtrifName" type="text"/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="rifLblCode">&nbsp;</td>
+                     <td width="225">
+                         <input id="txtrifCode" type="text"/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="rifLblGroup">&nbsp;</td>
+                     <td width="225">
+                         <input id="txtrifGroup" type="text"/>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="rifLblEmail">&nbsp;</td>
+                     <td width="225">
+                         <input id="txtrifEmail" type="text" />
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="rifLblOther">&nbsp;</td>
+                     <td width="225">
+                        <textarea id="txtrifOther"></textarea>
+                     </td>
+                 </tr>
+             </table>
+             <div id="ResultIdentFormButtons">
+                 <a href="#" id="resultButtonCancel" onclick="top.ccdmd.nq4.resultIdentFormCancel();"></a>
+                 &nbsp;&nbsp;
+                 <a href="#" id="resultButtonOK" onclick="top.ccdmd.nq4.resultIdentFormOK();"></a>
+             </div>
+         </div>
+    </div>        
+    <div id="sendtoForm">
+         <div id="sendtohandle">&nbsp;</div>
+         <div id="sendtoFormHeader">&nbsp;</div>
+         <div id="sendtoFormLine"></div>
+         <div id="sendtowrapper">
+                         <table id="sendtoFormTable" width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                             <td id="rifLblLastNameST">&nbsp;</td>
+                                             <td width="225">
+                                                        <input id="txtrifLastNameST" type="text"/>
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblNameST">&nbsp;</td>
+                                             <td width="225">
+                                                        <input id="txtrifNameST" type="text"/>
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblCodeST">&nbsp;</td>
+                                             <td width="225">
+                                                        <input id="txtrifCodeST" type="text"/>
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblGroupST">&nbsp;</td>
+                                             <td width="225">
+                                                     <input id="txtrifGroupST" type="text"/>
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblEmailST">&nbsp;</td>
+                                             <td width="225">
+                                                        <input id="txtrifEmailST" type="text" />
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblEmailDestST">&nbsp;</td>
+                                             <td width="225">
+                                                        <input id="txtrifEmailDestST" type="text" />
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                             <td id="rifLblOtherST">&nbsp;</td>
+                                             <td width="225">
+                                                        <textarea id="txtrifOtherST"></textarea>
+                                             </td>
+                                    </tr>
+                         </table>
+                         <div id="sendtoFormButtons">
+                                    <a href="#" id="sendtoButtonCancel" onclick="top.ccdmd.nq4.sendtoFormCancel();"></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" id="sendtoButtonOK" onclick="top.ccdmd.nq4.sendtoFormOK();"></a>
+                         </div>
+         </div>
+    </div>
+    <iframe id="shime" frameborder="0" src="about:blank">&nbsp;</iframe>
+</body>
+</html>

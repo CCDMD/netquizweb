@@ -1,0 +1,80 @@
+/* jqxSplitter */
+/* LES ELEMENTS QUI SUIVENT ONT ETE MODIFIES POUR NETQUIZ WEB */
+.jqx-splitter
+{ 
+   /* border: 1px solid #aaa;*/
+}
+/* Split bar's class when the jqxSplitter is with horizontal orientation */
+.jqx-splitter-splitbar-horizontal
+{
+    /* background: #D6D6D6 ; */ background:#A6BBC8 url("../images/bg-barre-resize.png") 0 0 repeat-y; 
+    /* border: 1px solid #aaa; */ border:none; 
+    /* border-top-width: 0px; */ /*border-top:1px solid #A6BBC8;
+    /* border-bottom-width: 0px;*/  /*border-bottom:1px solid #A6BBC8;*/
+    cursor: e-resize;
+    cursor: col-resize;
+}
+/* Split bar's mouse over state */
+.jqx-splitter-splitbar-hover
+{ 
+    /* background-color: #DEDEDE; */ background:#A6BBC8 url("../images/bg-barre-resize-over.png") 0 0 repeat-y;
+}
+/* Split bar's class when the jqxSplitter is with vertical orientation. */
+.jqx-splitter-splitbar-vertical
+{
+    background: #D6D6D6;
+    border: 1px solid #aaa;
+    border-left-width: 0px;
+    border-right-width: 0px;   
+    cursor: n-resize;
+    cursor: row-resize;
+}
+/* This class is applied to the splitter when it's dragged to it's max left/right boundary */
+.jqx-splitter-invalid
+{
+}
+/* This class is added to split bar's collapse button when the splitter is with vectical orientation. */
+.jqx-splitter-collapse-button-vertical
+{
+    cursor: pointer;
+    width: 45px;
+    height: 5px;
+    background: #999;
+}
+/* This class is added to split bar's collapse button when the splitter is with horizontal orientation. */
+.jqx-splitter-collapse-button-horizontal
+{
+    cursor: pointer;
+    /* width: 10px; */ width:8px; 
+    /* height: 35px; */ height:45px;
+    /* background: #999; */ background: url("../images/bg-barre-resize-fleches.png") 0 0 no-repeat;
+}
+/* This class is added when the user disable the splitter. */
+.jqx-splitter-splitbar-disabled
+{
+    cursor: default;
+    background: #aaa;
+}
+/* This class is added when the user disable the splitter. */
+.jqx-splitter-splitbar-collapsed
+{
+    cursor: default;
+}
+/* This class is added when the user disable the splitter. */
+.jqx-splitter-collapse-button-disabled
+{
+    cursor: default;
+    background: #aaa;   
+}
+/* This class is added to split bar's collapse button on mouse over. */
+.jqx-splitter-collapse-button-hover
+{
+    /* background: #777; */ background:#889BA6 url("../images/bg-barre-resize-fleches-over.png") 0 0 no-repeat;
+}
+/* Applied to the jqxSplitter panels. */
+.jqx-splitter-panel
+{
+ 	/*overflow: hidden;*/ overflow:visible; 
+    border: none; 
+    outline: none;
+}

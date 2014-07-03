@@ -1,0 +1,67 @@
+*
+{
+    font-family:arial;
+    font-size:12pt;
+}
+#resulttitle
+{
+    font-size:14pt;
+    font-weight:bold;
+}
+.resultheader
+{
+    margin-top:8px;
+    margin-left:36px;
+    border-top:solid 1px #d9d9d9;
+    border-left:solid 1px #d9d9d9;
+}
+.resultheader td
+{
+    border-right:solid 1px #d9d9d9;
+    border-bottom:solid 1px #d9d9d9;
+    text-align:center;
+}
+.resultheader td > div:first-child
+{
+    font-size:12pt;
+    margin:1px;
+    padding-top:3px;
+    background-color:#d9d9d9;
+}
+.resultHeaderContent
+{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.resulttable
+{
+    border-left:solid 1px #d9d9d9;
+    margin-left:36px;
+
+}
+.resulttable td
+{
+    text-align:center;
+    font-size:12pt;
+    border-bottom:solid 1px #d9d9d9;
+    border-right:solid 1px #d9d9d9;
+    padding:5px 0 5px 0;
+    
+}
+.resulttable td a
+{
+    font-size:12pt;
+}
+.resulttable td a:hover
+{
+}
+
+#printtitle {
+    font-size:16pt;
+}
+
+#totalScore {
+    font-weight:normal;
+}
+

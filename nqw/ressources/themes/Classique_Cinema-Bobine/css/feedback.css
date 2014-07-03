@@ -1,0 +1,276 @@
+#feedback
+{
+    height:35px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    background:url(../theme/imagestheme/feedback_header.png) repeat-x #FFFFFF;
+}
+#btnCloseFeedback
+{
+    text-align:right;
+    padding-right:8px;
+    padding-top:7px;
+    padding-bottom:7px;
+    cursor:pointer;
+}
+#btnCloseFeedback img
+{
+    cursor:pointer;
+}
+#feedbackcontent
+{
+    padding:20px 50px 0 50px;
+    overflow:auto;
+    background-color: #FFFFFF;
+    min-height: 125px;
+}
+
+.mainContainersValidate1
+{
+    width:250px;
+    min-height:42px;
+    height:auto !important;
+    height:42px;
+    font-size:10pt;
+    float:left;
+}
+
+.mainSpaceStyleValidate1
+{
+    width:30px;
+    height:42px;
+    font-size:0;
+    float:left;
+}
+
+.mainContainersValidate2{
+    width:156px;
+    min-height:42px;
+    height:auto !important;   
+    height:42px;
+    font-size:10pt;
+    float:left;
+}
+
+.mainSpaceStyleValidate2
+{
+    width:31px;
+    height:42px;
+    font-size:0;
+    float:left;
+}
+
+.feedbackTable
+{
+    font-size:16pt;
+}
+
+.feedbackTable td
+{
+    text-align:left;
+    vertical-align:top;
+}
+
+.feedbackTable2
+{
+    font-size:16pt;
+}
+
+.feedbackTable2 td
+{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.feedbackTable3
+{
+    font-size:16pt;
+}
+
+.Green
+{
+    color:Green;
+    font-weight:bold;
+}
+.Red
+{
+    color:Red;
+    font-weight:bold;
+}
+.Yellow
+{
+    color:#c0960e;
+    font-weight:bold;
+}
+
+.small p {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.small,
+.small p,
+.small em,
+.small strong,
+.small i,
+.small b, 
+.small a,
+.small sup,
+.small sub
+{
+    font-size:9pt!important;
+}
+
+.feedbackLineTxt{
+    padding-top:5px;
+}
+
+.feedbackLineImg{
+    padding-top:5px;
+}
+
+.feedbackLineImgAssRank{
+    padding-top:3px;
+}
+
+.feedbackLineSpacer{
+    height:20px;
+}
+
+.emptyLineRetro
+{
+    width:541px;
+    height:35px;
+    clear:both;
+}
+
+.retroContainerStyle1
+{
+    width:248px;
+    min-height:1px;
+    height:auto!important;
+    height:1px;
+    padding-top:5px;
+    font-size:10pt!important;
+    float:left;
+}
+
+.retroContainerStyle1 em,
+.retroContainerStyle1 strong,
+.retroContainerStyle1 i,
+.retroContainerStyle1 b,
+.retroContainerStyle1 u,
+.retroContainerStyle1 a,
+.retroContainerStyle1 a:hover
+{
+    font-size:10pt;
+}
+
+.retroContainerStyle2
+{
+    width:154px;
+    min-height:1px;
+    height:auto!important;
+    height:1px;
+    padding-top:5px;
+    font-size:10pt!important;
+    float:left;
+}
+
+.retroContainerStyle2 em,
+.retroContainerStyle2 strong,
+.retroContainerStyle2 i,
+.retroContainerStyle2 b,
+.retroContainerStyle2 u,
+.retroContainerStyle2 a,
+.retroContainerStyle2 a:hover
+{
+    font-size:10pt!important;
+}
+
+.retroContainerStyle3,
+.retroContainerStyle3 em,
+.retroContainerStyle3 strong,
+.retroContainerStyle3 i,
+.retroContainerStyle3 b,
+.retroContainerStyle3 u,
+.retroContainerStyle3 a,
+.retroContainerStyle3 a:hover
+{
+    font-size:8pt!important;
+}
+
+.tdRetro,
+.tdRetro em,
+.tdRetro strong,
+.tdRetro i,
+.tdRetro b,
+.tdRetro u,
+.tdRetro a,
+.tdRetro a:hover
+{
+    font-size:10pt!important;
+}
+
+.solutionMarquage{
+    line-height:20px;
+}
+
+.sepRetro1{
+    padding-top: 5px;
+}
+
+.retroMultimedia{
+    margin-top: 10px;
+    display: block;
+}
+
+.retroMultimediaVisibilityHidden{
+    visibility: hidden;
+}
+
+.retroMultimediaVisibilityVisible{
+    visibility: visible;
+}
+
+.containerMediaFeedback{
+    border: 0px;
+    display: inline-block;
+}
+
+#feedbackVideoContainer{
+    display: inline-block;
+}
+
+.strGood, 
+.strBad
+{
+    font-weight:bold!important;
+}
+
+.strGood
+{
+    color:green!important;
+}
+
+.strBad
+{
+    color:red!important;
+}
+
+.imgGood, 
+.imgBad
+{
+    height:50px!important;
+}
+
+.imgGood
+{
+    border:3px solid green!important;
+}
+
+.imgBad
+{    
+    border:3px solid red!important;
+}

@@ -1,0 +1,89 @@
+#sendtoForm
+{
+    position:absolute;
+    top:-1000px;
+    left:-1000px;
+    max-width:500px;
+    max-height:525px;
+    border:2px solid #4d4d4d;
+    background:url(../theme/imagestheme/bkg_header.png) repeat-x 0px -15px #FFFFFF;
+    z-index:1000;
+}
+#sendtohandle
+{
+    height:25px;
+    cursor:move;
+}
+#sendtoFormHeader
+{
+    padding-left:30px;
+    font-size:12pt;
+    font-weight:bold;
+}
+#sendtoFormLine
+{
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:11px;
+    border-bottom:1px solid;
+}
+#sendtowrapper{
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin-top:15px;
+    margin-left:30px;
+    max-width:500px;
+    max-height:475px;
+}
+#sendtoFormTable
+{
+    margin-top:15px;
+    padding-right:22px;
+}
+#sendtoFormTable td
+{
+    font-size:12pt;
+    font-weight:bold;
+    text-align:right;
+    padding-right:8px;
+    padding-bottom:8px;
+    vertical-align:top;
+}
+#sendtoFormTable input
+{
+    width:225px;
+}
+
+#sendtoFormTable textarea
+{
+    width:225px;
+    height:150px;
+}
+#sendtoFormButtons
+{
+    margin-top:10px;
+    text-align:right;
+    padding-right:30px;
+    padding-bottom:25px;
+}
+#sendtoFormButtons a
+{
+
+}
+#sendtoFormButtons a:hover
+{
+
+}
+#sendtoFormButtons img
+{
+    display: none;
+    vertical-align:middle;
+}
+
+#sendtoButtonCancel{
+    font-size:11pt;
+}
+
+#sendtoButtonOK{
+    font-size:11pt;
+}

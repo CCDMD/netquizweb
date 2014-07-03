@@ -1,0 +1,86 @@
+#lexiquepage
+{
+    padding-top:148px;
+    padding-left:90px;
+}
+
+#lexiqueother
+{
+    margin-left:10px;
+    margin-bottom:24px;
+}
+
+#lexiquetitle
+{
+    font-size:14pt;
+    font-weight:bold;
+    padding-left:25px;
+    margin-left:10px;
+    background:url(../theme/imagestheme/arrowOnly.png) left 3px no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #lexiquetitle{
+        /*SAFARI ONLY HACK*/
+        font-size:14pt;
+        font-weight:bold;
+        padding-left:25px;
+        margin-left:10px;
+        background:url(../theme/imagestheme/arrowOnly.png) left 1px no-repeat;
+    }
+}
+
+#lexiquelettres {
+    padding-top:8px;
+    margin-left:10px;
+    padding-left:25px;
+    width:601px;
+    font-size:11pt;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.a_id_lexique:hover {	
+	text-decoration: none;
+}
+
+
+.lettre_link_enabled {
+    cursor: pointer;
+}
+
+.lettre_link_disabled {
+    cursor: auto;
+    color: gray;
+    opacity: 0.4;
+}
+
+.lexique_lettre {
+    padding-right: 8px;
+}
+
+#lexiquecontenu {
+    margin-top: 40px;
+    margin-left: 35px;
+    padding-right: 80px;
+}
+
+.expression_lexique {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.variantes_lexique {
+	font-weight: bold;
+	margin-bottom: 8px;
+	margin-left: 5px;
+}
+
+.container_contenu_lexique,
+.container_contenu_lexique_img {
+    margin-bottom: 40px;
+}
+
+.container_contenu_lexique_img {
+    display: inline-block;
+}

@@ -1,0 +1,125 @@
+#resultpage
+{
+    padding-top:148px;
+    padding-left:90px;
+}
+
+/*Encore nécessaire?*/
+/*SAFARI ONLY HACK*/
+/*padding-top:75px;*/
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #resultpage{
+        
+        padding-top:75px;
+        padding-left:90px;
+    }
+}
+*/
+
+#resultother
+{
+    margin-left:10px;
+    margin-bottom:24px;
+    margin-right: 100px;
+}
+
+#resulttitle
+{
+    font-size:14pt;
+    font-weight:bold;
+    padding-left:25px;
+    margin-left:10px;
+    background:url(../theme/imagestheme/arrowOnly.png) left 3px no-repeat;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #resulttitle{
+        /*SAFARI ONLY HACK*/
+        font-size:14pt;
+        font-weight:bold;  
+        padding-left:25px;
+        margin-left:10px;
+        background:url(../theme/imagestheme/arrowOnly.png) left 1px no-repeat;
+    }
+}
+
+#totalScore
+{
+    font-weight:normal;
+}
+
+.resultheader
+{
+    margin-top:8px;
+    margin-left:36px;
+    border-top:solid 1px #d9d9d9;
+    border-left:solid 1px #d9d9d9;
+}
+.resultheader td
+{
+    border-right:solid 1px #d9d9d9;
+    border-bottom:solid 1px #d9d9d9;
+    text-align:center;
+}
+.resultheader td > div:first-child
+{
+    font-size:12pt;
+    margin:1px;
+    padding-top:3px;
+    background-color:#d9d9d9;
+}
+.resultHeaderContent
+{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.resultcontent
+{
+    margin-left:36px;
+    text-align:left;
+    width:624px;
+}
+.resulttable
+{
+    border-left:solid 1px #d9d9d9;
+
+}
+.resulttable td
+{
+    text-align:center;
+    font-size:12pt;
+    border-bottom:solid 1px #d9d9d9;
+    border-right:solid 1px #d9d9d9;
+    padding:5px 0 5px 0;
+    
+}
+.resulttable td a
+{
+    font-size:12pt;
+}
+.resulttable td a:hover
+{
+
+}
+#resultButtons
+{
+    padding-top:8px;
+    margin-left:20px;
+    width:601px;
+    text-align:right;
+}
+#resultButtons a
+{
+
+}
+#resultButtons a:hover
+{
+
+}
+#resultButtons img
+{
+    display: none;
+    vertical-align:middle;
+}

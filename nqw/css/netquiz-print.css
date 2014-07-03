@@ -1,0 +1,11 @@
+/* NetQuiz web - CSS Document - Print */
+
+*					{ font-size:12px; }
+#bodyContenu		{ width:98%; margin:0px auto; padding:0px; }
+
+#corps #colD #zoneContenu { border-left:1px solid #A6BBC8; }
+
+#ssMenu1		{  }
+#ssMenu1 ul 	{ list-style:disc; padding-left:15px;  }
+#ssMenu2 		{  }
+#ssMenu2 ul 	{ list-style:disc; margin-left:15px; padding-left:-15px; }

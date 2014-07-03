@@ -1,0 +1,44 @@
+/* ******************************************************************************************** */
+/* PERSONNALISATION POUR NETQUIZ - COPIE DU FICHIER UI_SILVER.CSS                               */
+/*                               ET RENOMMER LES CLASSES o2k7SkinSilver POUR o2k7SkinSilver-nqw */
+/*                               + MODIFIER COULEUR BORDURE                                     */
+/* ******************************************************************************************** */
+
+/* Silver */
+.o2k7SkinSilver-nqw .mceToolbar .mceToolbarStart span, .o2k7SkinSilver-nqw .mceButton, .o2k7SkinSilver-nqw .mceSplitButton, .o2k7SkinSilver-nqw .mceSeparator, .o2k7SkinSilver-nqw .mceSplitButton a.mceOpen, .o2k7SkinSilver-nqw .mceListBox a.mceOpen {background-image:url(img/button_bg_silver.png)}
+.o2k7SkinSilver-nqw td.mceToolbar, .o2k7SkinSilver-nqw td.mceStatusbar, .o2k7SkinSilver-nqw .mceMenuItemTitle a {background:#eee}
+.o2k7SkinSilver-nqw .mceListBox .mceText {background:#FFF}
+.o2k7SkinSilver-nqw .mceExternalToolbar, .o2k7SkinSilver-nqw .mceListBox .mceText, .o2k7SkinSilver-nqw div.mceMenu, .o2k7SkinSilver-nqw table.mceLayout, .o2k7SkinSilver-nqw .mceMenuItemTitle a, .o2k7SkinSilver-nqw table.mceLayout tr.mceFirst td, .o2k7SkinSilver-nqw table.mceLayout, .o2k7SkinSilver-nqw .mceMenuItemTitle a, .o2k7SkinSilver-nqw table.mceLayout tr.mceLast td, .o2k7SkinSilver-nqw .mceIframeContainer {border-color: #bbb}
+
+
+
+/* *********************************************************** */
+/* PERSONNALISATION POUR NETQUIZ - OVERWRITE DU FICHIER UI.CSS */
+/* *********************************************************** */
+
+/* ligne 9 - REPLACE : .o2k7Skin .mceToolbar {height:26px;} */
+.o2k7Skin .mceToolbar { height:0px; }
+
+/* lignes 12 - REPLACE : .o2k7Skin .mceExternalToolbar {position:absolute; border:1px solid #ABC6DD; border-bottom:0; display:none} */
+.o2k7Skin .mceExternalToolbar {position:absolute; border:0px solid #ABC6DD; border-bottom:0; display:none; }
+
+/* ligne 17 - REPLACE : .o2k7Skin table.mceLayout {border:0; border-left:1px solid #ABC6DD; border-right:1px solid #ABC6DD} */
+.o2k7Skin table.mceLayout {border-top:1px solid #9B9B9B ; border-bottom:0px; border-left:1px solid #B1B1B1 ;  border-right:1px solid #B1B1B1 ; }
+
+/* ligne 18 - REPLACE : .o2k7Skin table.mceLayout tr.mceFirst td {border-top:1px solid #ABC6DD} */
+.o2k7Skin table.mceLayout tr.mceFirst td {border-top:0px solid #9B9B9B ; border-bottom:0px; border-left:0px solid #B1B1B1 ;  border-right:0px solid #B1B1B1 ;  }
+
+/* ligne 19 - REPLACE : .o2k7Skin table.mceLayout tr.mceLast td {border-bottom:1px solid #ABC6DD} */
+.o2k7Skin table.mceLayout tr.mceLast td { border-top:0px solid #9B9B9B ; border-bottom:1px solid #BABABA; border-left:0px solid #B1B1B1 ; border-right:0px solid #B1B1B1 ; }
+
+/* ligne 39 - AJOUT : .o2k7Skin .mceButton {display:block; background:url(img/button_bg.png); width:22px; height:22px} */
+.o2k7Skin .mceButton { margin-top:3px; margin-bottom:4px; }
+
+
+/* **************************************************************** */
+/* PERSONNALISATION POUR NETQUIZ - OVERWRITE DU FICHIER CONTENT.CSS */
+/* **************************************************************** */
+/* ligne 1 - REPLACE : body, td, pre {color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; margin:8px;} */
+body, td, pre {color:#141215; font-family:Arial, Helvetica, sans-serif; font-size:12px; } /* ca marche pas */
+
+

@@ -1,0 +1,21 @@
+/js/jquery.mjs.nestedSortable.js:
+
+	Empêcher l'ajout d'une section dans une autre section.
+	
+	Code modifié : Ajout à la ligne 397:
+			
+			// Modifications pour Netquiz - RD
+			if (this.currentItem.hasClass('ssm-section') && parentItem != null){ 
+				this.placeholder.addClass(o.errorClass); 
+				this.beyondMaxLevels = 1;
+			}
+				
+/js/tiny_mce/themes/advanced/skins/o2k7/ui.css
+	
+	Enlever ligne 9 afin de masquer les barres d'outils lorsque le champ texte n'est pas en focus :
+	
+	.o2k7Skin .mceToolbar {height:26px}
+	
+	
+			
+			

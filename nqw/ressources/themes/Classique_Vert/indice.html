@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script language="javascript" type="text/javascript" src="scripts/prototype.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/scriptaculous/scriptaculous.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/draggablewindow.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/draggablewindow.css" />
+    <script>
+        var indiceWindow = null;
+    
+        window.onload = function(){
+            indiceWindow = new DraggableWindow($('indice'),$('indicehandle'));
+        }
+
+    </script>
+</head>
+<body>
+    <a href="javascript:indiceWindow.open()">Open indice</a>
+
+    <div id="indice" class="draggablewindow">
+        <div id="indicehandle">&nbsp;</div>
+        <div id="indiceheader">
+            <img src="theme/imagestheme/feedback_x_norm.png" onmouseover="this.src='theme/imagestheme/feedback_x_roll.png'" onmouseout="this.src='theme/imagestheme/feedback_x_norm.png'" onclick="indiceWindow.close()" />
+            Indice
+        </div>
+        <div id="indicesep">
+            
+        </div>
+        <div id="indicewrapper">
+            <div id="indicecontent">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
