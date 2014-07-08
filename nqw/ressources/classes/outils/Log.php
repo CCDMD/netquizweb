@@ -31,7 +31,8 @@ require_once '../ressources/classes/outils/Erreur.php';
 
 		// Constructeur
 		public function __construct( $fichier, $priorite ) {
-			if ( $priorite == Log::AUCUN ) return;
+			// RD20140706 Correctif pour permettre l'écritre des logs en cas d'exception
+			//if ( $priorite == Log::AUCUN ) return;
 			
 			$this->fichier = $fichier;
 			$this->priorite = $priorite;
