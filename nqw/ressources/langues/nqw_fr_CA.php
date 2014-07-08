@@ -60,7 +60,7 @@ define('TXT_ANNULER','Annuler');
 define('TXT_ENREGISTRER', 'Enregistrer');
 define('TXT_TITRE_DU_QUESTIONNAIRE', 'Titre du questionnaire');
 define('TXT_CHOISIR_UNE_COLLECTION', 'Choisir une collection');
-define('TXT_GENERATION_DES_ITEMS', 'PR&eacute;sentation des items');
+define('TXT_GENERATION_DES_ITEMS', 'Pr&eacute;sentation des items');
 define('TXT_SELON_PARAMETRE_SECTION', 'Selon le param&egrave;tre de chaque section');
 define('TXT_SELON_PARAMETRE_ITEM', 'Selon le param&egrave;tre de chaque item');
 define('TXT_ORDRE_ALEATOIRE', 'Ordre al&eacute;atoire');
