@@ -125,6 +125,11 @@
 				$succes = -1;
 			}
 			
+			if (ACTIVER_CHANGEMENT_PERMISSIONS_FICHIERS_APERCUS == "1") {
+				// Changer les permissions
+				Fichiers::chmodRecursif($repertoireDestination);
+			}
+			
 			$this->log->debug("Publication::copierTheme() Fin  (succes = '$succes')");
 			
 			return $succes;

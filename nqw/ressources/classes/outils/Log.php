@@ -46,6 +46,7 @@ require_once '../ressources/classes/outils/Erreur.php';
 			
 			if ( ! $this->fh = fopen( $this->fichier , "a" ) ) {
 				$erreur = new Erreur('002', 'Le fichier journal ne peut être ouvert pour ajout', NULL);
+				print "Impossible d'écrire le journal : '" . $this->fichier . "'\n";
 				return;
 			}
 			
@@ -90,9 +91,19 @@ require_once '../ressources/classes/outils/Erreur.php';
 		 * 
 		 */
 		public function EcrireLog( $contenu ) {
+			
+			if ($this->fh == null) {
+				print "Impossible d'écrire le journal : '" . $this->fichier . "' le contenu : '$contenu'<br />\n";
+			} else {
+			
+				try {
 		    if (fwrite( $this->fh , $contenu ) === false) {
 		        // TODO : Traiter erreur écriture log
 		    }
+				} catch (Exception $e) {
+					print "Impossible d'écrire le journal : '" . $this->fichier . "' Exception : " . $e->getMessage() . $e->getTraceAsString() . "\n";
+				}	
+			}
 		}
 		
 		/**

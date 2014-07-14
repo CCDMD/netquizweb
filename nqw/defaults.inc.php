@@ -21,6 +21,9 @@ define('TIMEZONE_DEFAUT','America/Montreal');
 // ** Identification de l'installation ** //
 define('ID_INSTALLATION', URL_DOMAINE . URL_BASE);
 
+// ** Permet d'activer le changement de permissions pour les aperçus.  Valeurs possibles : 0 ou 1 ** //
+define('ACTIVER_CHANGEMENT_PERMISSIONS_FICHIERS_APERCUS', "0");
+
 // ** Configuration pour la BD et les langues ** //
 define('DB_CHARSET', 'utf8');
 define('LANGUE_DEFAUT_ID', '1');

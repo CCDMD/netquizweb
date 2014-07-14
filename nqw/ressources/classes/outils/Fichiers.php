@@ -466,6 +466,52 @@
 		    
 		    return $zip->close();
 		}
+		
+		
+		/**
+		 *
+		 * Changer les permissions récursivement
+		 * @param String Chemin complet du répertoire source
+		 * @param String Permissions pour les fichiers
+		 * @param String Permissions pour les répertoires
+		 * @return bool Vrai si tout a fonctionné
+		 *
+		 */
+		function chmodRecursif($repertoire, $permFichier=0644, $permRep=0775) {
+		
+			// Vérifier si le répertoire existe
+			if (!file_exists($repertoire)) {
+				return(false);
+			}
+		
+			// Vérifier si c'est un fichier
+			if (is_file($repertoire)) {
+		
+				// Si oui, appliquer permissions fichier
+				chmod($repertoire, $permFichier);
+		
+			} elseif (is_dir($repertoire)) {
+		
+				// Obtenir le contenu
+				$listeContenu = scandir($repertoire);
+		
+				// Enlever "." et ".."
+				$contenu = array_slice($listeContenu, 2);
+		
+				// Parcourir les résultats
+				foreach ($contenu as $element) {
+		
+					// Appeler la fonction récursivement
+					Fichiers::chmodRecursif($repertoire."/".$element, $permFichier, $permRep);
+				}
+		
+				// Régler les permissions du répertoires lui même
+				chmod($repertoire, $permRep);
+			}
+		
+			// Terminer
+			return(true);
+		}
 			
 		
 	}
