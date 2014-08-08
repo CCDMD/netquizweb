@@ -332,7 +332,7 @@ define('TXT_MON_COMPTE', 'My Account');
 define('TXT_NOUVEAU_MOT_PASSE', 'New password'); 
 define('TXT_NOUVEAU_MOT_PASSE_CONF', 'Confirm new password'); 
 define('TXT_MOT_PASSE_ACTUEL','Current password'); 
-define('TXT_MDP_INSTRUCTIONS', '(Minimum of 8 characters, including at least one letter and one number'); 
+define('TXT_MDP_INSTRUCTIONS', '(Minimum of 8 characters, including at least one letter and one number)'); 
 define('TXT_CODE_USAGER_INSTRUCTIONS', '(Minimum of 5 characters, without spaces, including only letters, numbers, underscore(_) or dash(-))'); 
 define('TXT_MON_MOT_DE_PASSE', 'My Password'); 
 define('TXT_POUR_LA_CORRECTION_TENIR_COMPTE', 'When correcting, take into account'); 
