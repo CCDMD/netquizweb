@@ -31,7 +31,7 @@ var Page = Class.create({
     timerEnabled: false,
     pageNextEnabled: true,
     pageBackEnabled: true,
-    showNavBSolution: true,
+    showNavBSolution: false,
     
     //Text vars
     readableType: null,

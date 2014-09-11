@@ -1406,6 +1406,14 @@ var Netquiz = Class.create({
             
             $('containerMarquage').update('');
             $('containerMarquage').hide();
+            
+                        
+            if (page.showNavBSolution) {
+                $('navbSolution').show();
+            }
+            else {
+                $('navbSolution').hide();
+            }
         }
         else{
             this.isPageSection = false;
@@ -1420,10 +1428,14 @@ var Netquiz = Class.create({
                 $$('#navbValidate')[0].update('<a href="javascript:top.ccdmd.nq4.validate();">' + this.navbValidate + '</a>');
 
 
-            if (page.showNavBSolution)
-                $('navbSolution').show();
-            else
-                $('navbSolution').hide();
+             if (page.showNavBSolution) {
+             	 $('navbSolution').show();
+             }
+             else { 
+                 $('navbSolution').hide();
+                 $$('#navbSolution')[0].update('');
+             }
+             
 
             $('navbValidate').show();
 
@@ -1523,8 +1535,7 @@ var Netquiz = Class.create({
         else
             $('navbSolution').hide();
         
-        //***Page navbar***
-        //type
+        //***Page navbar***        
 
         if(page.readableType){
             presentBar = true;
@@ -3227,17 +3238,7 @@ function initLexiqueVariantes() {
 					}
 				}					
 			});
-		});
-								
-		/*
-		jQuery.each(lexiqueObj.elements, function(j) {				
-			jQuery.each(lexiqueObj.elements[j], function(key, val) {
-				if (key == "expression") {
-					alert("after = " + val);
-				}
-			});
-		});	
-		*/
+		});										
 	}	
 }
 
@@ -3283,8 +3284,7 @@ function evalStringForLexique(strToEvaluate) {
 	}
 	
 	
-	if (goodToEvaluate == true) {	
-		//alert("strToEvaluate = " + strToEvaluate);
+	if (goodToEvaluate == true) {			
 		strToEvaluate = strToEvaluate.replace(/«/gi, 'rep%«rep% ');
 		strToEvaluate = strToEvaluate.replace(/»/gi, ' rep%»rep%');
 		strToEvaluate = strToEvaluate.replace(/&nbsp;/gi, ' ');

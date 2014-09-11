@@ -526,7 +526,7 @@ define('TXT_ADMINISTRATEUR', 'Administrateur');
 define('TXT_NOTIFIER_UTILISATEUR_DES_MODIFICATIONS', 'Notifier l\'utilisateur des modifications apportées');
 define('TXT_DEMANDE_TRANSMISE', 'Votre demande a été transmise. Son approbation peut prendre 1 ou 2 jours ouvrables.');
 define('TXT_DEMANDE_ACTIVATION_COMPTE_SUJET','Demande d\'activation d\'un compte Netquiz Web');
-define('TXT_DEMANDE_ACTIVATION_COMPTE_TEXTE','Un nouvel utilisateur s\'est inscrit. Sa demande nécessite votre approbation&nbsp;:');
+define('TXT_DEMANDE_ACTIVATION_COMPTE_TEXTE','Un nouvel utilisateur s\'est inscrit. Sa demande nécessite votre approbation :');
 define('TXT_COMPTE','Compte');
 define('TXT_MES_PROJETS','Mes projets');
 define('TXT_DERNIER_ACCES', 'Dernier accès');
