@@ -109,19 +109,6 @@
 	                                        <p><label for="usager_code"><?php echo TXT_DERNIER_ACCES ?></label>
 	                                        <?php echo $usr->get("date_dern_authentification") ?></p>
                                             
-                                            <p><label for="usager_langue"><?php echo TXT_LANGUE_INTERFACE ?></label>
-												<select class="w250" id="usager_langue_interface" name="usager_langue_interface">
-											
-													<?php foreach ($listeLanguesInterface as $codeLangue => $titreLangue) { ?>
-											
-							                    		<option value="<?php echo $codeLangue ?>" <?php if ($usr->get("langue_interface") == $codeLangue) { echo "selected"; }?>><?php echo $titreLangue ?></option>
-													
-													<?php } ?>
-
-												</select>
-
-											</p>											
-
 	                                        <p><label for="usager_courriel"><?php echo TXT_COURRIEL ?> <abbr title="<?php echo TXT_CHAMPS_REQUIS ?>"> *</abbr></label>
 	                                        <input type="text" id="usager_courriel" name="usager_courriel" class="suiviModif" size="50" maxlength="150"   value="<?php echo $usr->get("courriel") ?>" /></p>
 											
