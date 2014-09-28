@@ -169,7 +169,7 @@ define('TXT_BIENVENUE_DANS_NETQUIZ_WEB2', ')');
 define('TXT_IDENTIFICATION_LIGNE1', '<em>Netquiz Web</em> vous permet de composer des exercices, des jeux-questionnaires ou des tests formatifs et de les publier sur le Web au moyen d\'un simple clic. Ces derniers peuvent comporter des items de 14 types diff&eacute;rents <em>(Associations, Choix multiples, Classement, Damier, D&eacute;veloppement, Dict&eacute;e, Marquage, Mise en ordre, R&eacute;ponse br&egrave;ve, R&eacute;ponses multiples, Texte lacunaire, Vrai ou faux, Zones &agrave; identifier, Page)</em>&nbsp;dans lesquels il vous est possible d\'ins&eacute;rer des images, des textes, des sons et des s&eacute;quences vid&eacute;o. Vous pouvez &eacute;galement ajouter un glossaire, de sorte que les termes et expressions qu\'il contient s\'affichent en relief dans le questionnaire, permettant aux r&eacute;pondants d\'obtenir leur d&eacute;finition sous forme de texte, d\'image, de vid&eacute;o, de son ou de liens.');
 define('TXT_CONNEXION', 'Connexion');
 define('TXT_ENTREZ_NOM_UTILISATEUR_ET_MOT_DE_PASSE', 'Entrez votre nom d\'utilisateur et votre mot de passe.');
-define('TXT_IDENTIFICATION_CONSULTEZ_AIDE', 'Pour toute question ou si vous &eacute;prouvez des probl&egrave;mes, n&rsquo;h&eacute;sitez pas &agrave; contacter le soutien technique du CCDMD &agrave; <a href="mailto:soutien@ccdmd.qc.ca">soutien@ccdmd.qc.ca</a>.');
+define('TXT_IDENTIFICATION_CONSULTEZ_AIDE', '');
 define('TXT_MESSAGE_NAVIGATEURS_NON_SUPPORTES', 'Cette application n\'est pas optimis&eacute;e pour votre navigateur. Veuillez faire passer votre navigateur &agrave; une version plus r&eacute;cente.');
 define('TXT_COURRIEL_OU_NOM_UTILISATEUR', 'Courriel ou nom d\'utilisateur');
 define('TXT_CHAMPS_REQUIS', 'Champs requis');

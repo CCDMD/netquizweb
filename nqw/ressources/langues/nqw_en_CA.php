@@ -169,7 +169,7 @@ define('TXT_BIENVENUE_DANS_NETQUIZ_WEB2', ')');
 define('TXT_IDENTIFICATION_LIGNE1', '<em>Netquiz Web</em> lets you create exercises, quizzes or formative tests and publish them on the Web with a single click. These quizzes offer 14 different items or question-types (<em>Matching, Multiple choice, Classification, Matching board, Essay, Dictation, Highlight, Sequencing, Short answer, Multiple answer, Fill in the blanks, True or False, Identify parts of an image, Page</em>). You can insert texts, images, audio and video files into any question. You can also add a glossary, so that the terms it contains appear highlighted in the quiz, allowing respondents to get their definition in the form of text, image, video, audio or links.'); 
 define('TXT_CONNEXION', 'Log in'); 
 define('TXT_ENTREZ_NOM_UTILISATEUR_ET_MOT_DE_PASSE', 'Enter your username and password.'); 
-define('TXT_IDENTIFICATION_CONSULTEZ_AIDE', 'If you have questions or experience technical problems, contact technical support at <a href="mailto:soutien@ccdmd.qc.ca">soutien@ccdmd.qc.ca</a>.'); 
+define('TXT_IDENTIFICATION_CONSULTEZ_AIDE', ''); 
 define('TXT_MESSAGE_NAVIGATEURS_NON_SUPPORTES', 'Netquiz Web is not optimized for your browser. Please upgrade your browser to a newer version.'); 
 define('TXT_COURRIEL_OU_NOM_UTILISATEUR', 'Email or username'); 
 define('TXT_CHAMPS_REQUIS', 'Required fields'); 
