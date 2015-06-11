@@ -477,7 +477,7 @@
 		 * @return bool Vrai si tout a fonctionné
 		 *
 		 */
-		function chmodRecursif($repertoire, $permFichier=0644, $permRep=0775) {
+		static function chmodRecursif($repertoire, $permFichier=0644, $permRep=0775) {
 		
 			// Vérifier si le répertoire existe
 			if (!file_exists($repertoire)) {
