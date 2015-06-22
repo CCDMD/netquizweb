@@ -1015,6 +1015,7 @@ define("ERR_234", "La balise XML &laquo;&nbsp;texte&nbsp;&raquo; est incorrecte 
 define("ERR_235", "La balise XML &laquo;&nbsp;url&nbsp;&raquo; est incorrecte ou absente.");
 define("ERR_236", "Le fichier n'est pas du bon type.");
 define("ERR_237", "DANGER! Une ou plusieurs personnes travaillent actuellement sur le même élément que vous. Cette situation pourrait entraîner des pertes de données si vous enregistrez au même moment. Veuillez contacter ces personnes au besoin&nbsp;: ");
+define("ERR_238", "Le paramètre RETURN_PATH du fichier de configuration &laquo;&nbsp;config.inc.php&nbsp;&raquo; est absent ou incorrect.");
 
 /** URL pour l'aide en ligne **/
 define('URL_AIDE_NQW', 'http://aide.ccdmd.qc.ca/nqw/fr/content/');

@@ -132,6 +132,10 @@ try {
 			$erreurs .= HTML_LISTE_ERREUR_DEBUT . ERR_224 . HTML_LISTE_ERREUR_FIN;
 			$totErreurs++;
 		}
+		if (RETURN_PATH == "" || !filter_var(EMAIL_FROM, FILTER_VALIDATE_EMAIL)) {
+			$erreurs .= HTML_LISTE_ERREUR_DEBUT . ERR_238 . HTML_LISTE_ERREUR_FIN;
+			$totErreurs++;
+		}
 		
 		if ($totErreurs > 0) {
 			$messages = new Messages($erreurs, Messages::ERREUR);
