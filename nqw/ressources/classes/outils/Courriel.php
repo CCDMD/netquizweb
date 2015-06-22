@@ -50,14 +50,16 @@
 			
 			// Préparation des entêtes
 			$entetes = "From: \"Netquiz Web\" <" . EMAIL_FROM . ">\n"; 
-			$entetes .= "Reply-To: " . EMAIL_FROM > "\n"; 
+			$entetes .= "Reply-To: <" . EMAIL_FROM . ">\n"; 
 			$entetes .= "Content-Type: text/plain; charset=\"UTF-8\"\n"; 
 			$entetes .= "Content-Transfer-Encoding: 8bit"; 
+			
+			$parametres = "-f " . RETURN_PATH;
 			
 			// Envoi du courriel
 			try {
 				mb_language("uni"); 
-				if (mb_send_mail($dest, $sujet, $message, $entetes)) {
+				if (mb_send_mail($dest, $sujet, $message, $entetes, $parametres)) {
 					$succes = 1;
 				}
 			} catch (Exception $e) {

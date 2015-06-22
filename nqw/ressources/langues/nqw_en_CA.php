@@ -1018,6 +1018,7 @@ define("ERR_234", "The XML tag 'texte' is invalid or missing.");
 define("ERR_235", "The XML tag 'url' is invalid or missing.");
 define("ERR_236", "This is not the correct file type.");
 define("ERR_237", "WARNING! One or more people are working on the same element as you. This could result in a loss of data if you save. If necessary, contact these people: ");
+define("ERR_238", "The RETURN_PATH parameter is missing or incorrect in the config.inc.php file.");
 
 /** URL pour l'aide en ligne **/
 define('URL_AIDE_NQW', 'http://aide.ccdmd.qc.ca/nqw/en/content/');
